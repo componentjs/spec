@@ -13,7 +13,7 @@ Modules are defined with suffixes.
 Without a suffix,
 a module is assumed to be a command line tool.
 For example, `component.json/` is the specifications for `component.json`,
-and `component-build` is the specifications for the `command build` command.
+and `component-build` is the specifications for the `component build` command.
 
 ## Contributing
 
