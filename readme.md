@@ -9,17 +9,9 @@ Each folder will have the following files:
   - `implementation.md` - implementation notes
   - `faq.md` - frequently asked questions
 
-Modules are defined with suffixes.
-Without a suffix,
-a module is assumed to be a command line tool.
-For example, `component.json/` is the specifications for `component.json`,
-and `component-build` is the specifications for the `component build` command.
-
 ## Contributing
 
 Open an issue or a pull request with any suggestions you may have.
-
-Do natural line breaks (periods, commas, etc.) in markdown so diffs look better.
 
 ## License
 
