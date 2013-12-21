@@ -109,6 +109,25 @@
 }
 ```
 
+  Each dependency must be defined in the following form:
+
+```
+"<user>/<repo>": "* | <git reference> | <semver range>"
+```
+
+  A `*` wildcard dependency will try the following:
+
+  1. Use a version already included in the build
+  2. Use the latest tag release
+  3. Use the the main branch
+
+  Each reference can be:
+
+  - a `git` reference including:
+    - `<tag>`
+    - `<branch>` such as `master` or `gh-pages`
+    - `<commit>` sha
+
 ## .development
 
   Development dependencies. For example:
