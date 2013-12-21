@@ -23,13 +23,19 @@
 }
 ```
 
+## .private
+
+  A boolean specifying whether the component is __private__, defaulting to `false`. A component is either __private__ or __public__.
+
+  A __private__ component cannot be published to a public registry and has different restrictions than __public__ components.
+
 ## .name
 
   The component __MUST__ have a "name", this is what will be passed to `require()`.
 
 ## .repo
 
-  The component __MUST__ have a "repo" property,
+  The __public__ component __MUST__ have a "repo" property,
   this is registry end-point consisting of `<username>/<project>`,
   for example "visionmedia/page.js" or "component/dialog".
 
@@ -40,14 +46,14 @@
 
 ## .version
 
-  The component __MUST__ include a version,
+  The __public__ component __MUST__ include a version,
   unless used as a local component,
   allowing other scripts to depend on specific releases of the component.
 
 ## .keywords
 
   Keywords are used when searching for a component.
-  A component __SHOULD__ list a few keywords.
+  A __public__ component __SHOULD__ list a few keywords.
 
 ## .main
 
@@ -116,7 +122,9 @@
 }
 ```
 
-## .local
+## .locals
+
+  The __public__ component __must not__ contain any `locals`.
 
   Local dependencies are already located on disk,
   these are not installed,
@@ -131,6 +139,8 @@
 ```
 
 ## .remotes
+
+  The __public__ component __must not__ contain any `remotes`.
 
   The "remotes" property __MAY__ be supported to support additional component servers,
   where github is implied.
@@ -159,6 +169,8 @@
 ```
 
 ## .paths
+
+  The __public__ component __must not__ contain any `paths`.
 
   The root component __SHOULD__ be able to utilize an array of lookup paths,
   allowing users to separate local and remote components:
