@@ -65,21 +65,15 @@
 
 ## .scripts
 
-  The `scripts` field explicitly specifies the JavaScript files that this component relies on. These __MUST__ be regular JavaScript, not CoffeeScript,
-  LiveScript or similar compiled languages.
-  You may of course develop in these languages and compile to native JavaScript,
-  however it is highly recommended that _public_ components are written using JavaScript.
+  The `scripts` field explicitly specifies the scripts for this component. For __public__ components, these __must__ be regular JavaScript files. For __private__ components, these __should__ be regular Javascript files.
 
 ## .styles
 
-  The `styles` field explicitly specifies the stylesheets for this component,
-  and follow the same rules as `scripts`,
-  compilers such as Stylus or SASS may be used to compile down to regular CSS,
-  however it is not recommended.
-  Keeping components small and focused also greatly reduces the need for such tools.
-  Opinionated styling unless tightly integrated with the component __SHOULD__ be left out.
-  For example [Calendar](https://github.com/component/calendar) has very minimal structural styling only,
-  while the [Aurora Calendar](https://github.com/component/aurora-calendar) theme provides more opinionated styles.
+  The `styles` field explicitly specifies the stylesheets for this component. For __public__ components, these __must__ be regular CSS files. For __private__ components, these __should__ be regular CSS files.
+
+## .json
+
+  The `json` field explicitly specifies the `JSON` files for this component. Each file __must__ be valid `JSON`.
 
 ## .images
 
