@@ -124,19 +124,6 @@
     - `<branch>` such as `master` or `gh-pages`
     - `<commit>` sha
 
-## .development
-
-  Development dependencies. For example:
-
-```json
-{
-  "development": {
-    "component/assert": "*",
-    "visionmedia/mocha": "*"
-  }
-}
-```
-
 ## .locals
 
   The __public__ component __must not__ contain any `locals`.
@@ -204,6 +191,27 @@
 ```json
 {
   "templates": ["user.html"]
+}
+```
+
+## .development
+
+  `component.json` properties valid only during development. For example:
+
+```json
+{
+  "development": {
+    "dependencies": {
+      "component/assert": "*",
+      "visionmedia/mocha": "*"
+    },
+    "scripts": [
+      "test.js"
+    ],
+    "styles": [
+      "test.css"
+    ]
+  }
 }
 ```
 
