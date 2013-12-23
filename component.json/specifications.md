@@ -71,6 +71,8 @@
 
   The `styles` field explicitly specifies the stylesheets for this component. For __public__ components, these __must__ be regular CSS files. For __private__ components, these __should__ be regular CSS files.
 
+  `styles` __must not__ use any globs or globstars.
+
 ## .json
 
   The `json` field explicitly specifies the `JSON` files for this component. Each file __must__ be valid `JSON`.
@@ -230,3 +232,7 @@
   for example a tooltip or dialog has very little markup.
   Your private application may utilize custom properties to auto-compile templates as part of the build,
   public components must use pre-built templates.
+
+## Glob Support
+
+  Properties __may__ use globs and globstars to list files unless noted otherwise.
