@@ -71,8 +71,6 @@
 
   The `styles` field explicitly specifies the stylesheets for this component. For __public__ components, these __must__ be regular CSS files. For __private__ components, these __should__ be regular CSS files.
 
-  `styles` __must not__ use any globs or globstars.
-
 ## .json
 
   The `json` field explicitly specifies the `JSON` files for this component. Each file __must__ be valid `JSON`.
@@ -243,4 +241,5 @@
 
 ## Glob Support
 
-  Properties __may__ use globs and globstars to list files unless noted otherwise.
+  Properties __may__ use globs and globstars to list files __only when the order of files is insignificant__.
+
