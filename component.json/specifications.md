@@ -122,6 +122,8 @@
     - `<branch>` such as `master` or `gh-pages`
     - `<commit>` sha
 
+  The __public__ component __should__ have semantic versioned dependencies.
+
 ## .locals
 
   The __public__ component __must not__ contain any `locals`.
