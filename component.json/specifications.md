@@ -33,6 +33,8 @@
 
   The component __MUST__ have a "name", this is what will be passed to `require()`.
 
+  The `local` component __MUST__ be contained within a folder of the same `name`.
+
 ## .repo
 
   The __public__ component __MUST__ have a "repo" property,
