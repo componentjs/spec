@@ -34,6 +34,8 @@
   The component __MUST__ have a "name", this is what will be passed to `require()`.
 
   The `local` component __MUST__ be contained within a folder of the same `name`.
+  
+  The name __MUST__ only consist of lowercase letters, numbers, and dashes. It must match the regular expression `/^[0-9a-z-]+$/`.
 
 ## .repo
 
