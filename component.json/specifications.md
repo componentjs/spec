@@ -37,9 +37,9 @@
   
   The name __MUST__ only consist of lowercase letters, numbers, and dashes. It must match the regular expression `/^[0-9a-z-]+$/`.
 
-## .repo
+## .repository
 
-  The __public__ component __MUST__ have a "repo" property,
+  The __public__ component __MUST__ have a "repository" property,
   this is registry end-point consisting of `<username>/<project>`,
   for example "visionmedia/page.js" or "component/dialog".
 
