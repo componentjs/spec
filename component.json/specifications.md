@@ -9,7 +9,7 @@
 ```js
 {
   "name": "tip",
-  "repo": "component/tip",
+  "repository": "component/tip",
   "description": "Tip component",
   "version": "0.0.1",
   "keywords": ["tooltip", "tip", "ui"],
@@ -25,9 +25,7 @@
 
 ## .private
 
-  A boolean specifying whether the component is __private__, defaulting to `false`. A component is either __private__ or __public__.
-
-  A __private__ component cannot be published to a public registry and has different restrictions than __public__ components.
+  A boolean specifying whether the component is __private__, defaulting to `false`. A component is considered either __private__ or __public__. A __private__ component has different restrictions than __public__ components.
 
 ## .name
 
@@ -45,14 +43,15 @@
 
 ## .description
 
-  The component __SHOULD__ have a "description" property,
-  this helps people find and understand your component.
+  The component __SHOULD__ have a "description" property.
+  This helps people find and understand your component.
 
 ## .version
 
   The __public__ component __MUST__ include a version,
-  unless used as a local component,
   allowing other scripts to depend on specific releases of the component.
+  
+  __local__ components do not need a version.
 
 ## .keywords
 
@@ -116,8 +115,8 @@
   A `*` wildcard dependency will try the following:
 
   1. Use a version already included in the build
-  2. Use the latest tag release
-  3. Use the the main branch
+  2. Use the highest semantic version tag
+  3. Use the the main branch, usually `master`
 
   Each reference can be:
 
@@ -129,8 +128,6 @@
   The __public__ component __should__ have semantic versioned dependencies.
 
 ## .locals
-
-  The __public__ component __must not__ contain any `locals`.
 
   Local dependencies are already located on disk,
   these are not installed,
@@ -219,33 +216,19 @@
 }
 ```
 
-## .demo
-
-  Optional full url for a live demonstration of a component.
-
 ## .license
 
   The license string such as "MIT" may be used for search output and other reporting,
   developers __SHOULD__ specify this field
 
-## Custom properties
-
-  Custom properties may of course be used to facilitate custom build steps.
-  For example if you're a fan of CoffeeScript and you wish to skip manual compilation for custom app-specific components,
-  you could simply add a property named `coffee: ["foo.coffee"]` and handle the translation in the build step.
-  Custom properties __SHOULD__ be namespaced to prevent future collisions.
-
-## Templates
-
-  Templates __SHOULD__ be compiled down to regular JavaScript and added to the `scripts` array before publishing a release to Github.
-  For example: Jade, Hogan and many other template engines allow templates to be compiled to a self-contained executable function; they do not require the entire library itself.
-  When possible it is strongly suggested that you use raw HTML and intrinsic DOM manipulation for public components so that contributors feel comfortable.
-  This is often easily possible, as components are focused,
-  for example a tooltip or dialog has very little markup.
-  Your private application may utilize custom properties to auto-compile templates as part of the build,
-  public components must use pre-built templates.
-
 ## Glob Support
 
   Properties __may__ use globs and globstars to list files __only when the order of files is insignificant__.
 
+## Custom properties
+
+  Custom properties may of course be used to facilitate custom build steps and is, in fact, encouraged.
+  For example if you're a fan of CoffeeScript and you wish to skip manual compilation for custom app-specific components,
+  you could simply add a property named `coffee: ["foo.coffee"]` and handle the translation in the build step.
+  Custom properties __SHOULD__ be namespaced to prevent future collisions.
+  
