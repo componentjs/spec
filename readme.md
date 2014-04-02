@@ -1,9 +1,8 @@
-
 # Component Specifications
 
 Specs for Component.
 If you're new to Component,
-please read this [blog post](http://tjholowaychuk.com/post/27984551477/components).
+please read this [blog post](http://tjholowaychuk.tumblr.com/post/27984551477/components).
 
 ## Contributing
 
