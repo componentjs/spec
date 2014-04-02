@@ -33,7 +33,7 @@
 
   A `local` component is referenced by its container folder's name. A `local` component should either have no name or a name matching the containing folder's.
   
-  The name __MUST__ only consist of lowercase letters, numbers, and dashes. It must match the regular expression `/^[0-9a-z-]+$/`.
+  The name __MUST__ only consist of lowercase letters, numbers, dashes, and underscores. It must match the regular expression `/^[0-9a-z-_]+$/`.
 
 ## .repository
 
