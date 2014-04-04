@@ -112,20 +112,21 @@
 "<user>/<repo>": "* | <git reference> | <semver range>"
 ```
 
-  A `*` wildcard dependency will try the following:
+A `*` wildcard dependency will try the following:
 
   1. Use a version already included in the build
   2. Use the highest semantic version tag
   3. Use the the main branch, usually `master`
 
-  Each reference can be:
+Each reference can be:
 
-  - a `git` reference including:
+- a `git` reference including:
+  
     - `<tag>`
     - `<branch>` such as `master` or `gh-pages`
     - `<commit>` sha
 
-  The __public__ component __should__ have semantic versioned dependencies.
+The __public__ component __should__ have semantic versioned dependencies.
 
 ## .locals
 
