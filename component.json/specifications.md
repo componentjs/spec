@@ -17,7 +17,8 @@
     "component/emitter": "*",
     "component/jquery": "*"
   },
-  "scripts": ["index.js", "template.js"],
+  "templates" : ["template.html"],
+  "scripts": ["index.js"],
   "styles": ["tip.css"],
   "license": "MIT"
 }
