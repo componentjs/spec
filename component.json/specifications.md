@@ -139,7 +139,7 @@ The __public__ component __should__ have semantic versioned dependencies.
 
 ```json
 {
-  "local": ["my-emitter"]
+  "locals": ["my-emitter"]
 }
 ```
 
