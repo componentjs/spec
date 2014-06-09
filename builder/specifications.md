@@ -1,6 +1,7 @@
 # builder
 
   These are the specifications for building components.
+  Component(1) uses component/builder2.js, here you can find the [documentation](https://github.com/component/builder2.js/tree/master/docs).
 
 ## Order
 
