@@ -189,7 +189,7 @@ The __public__ component __should__ have semantic versioned dependencies.
 ## .templates
 
   The templates array __MUST__ provide the contents of each file as a require-able module.
-  For example the following must provide the HTML string via `require('user.html')`.
+  For example the following must provide the HTML string via `require('./user.html')`.
   If you're using `component-build` the files will be converted automatically using the [string plugin](https://github.com/component/builder2.js/blob/master/docs/scripts.md#string) of builder2.
 
 ```json
