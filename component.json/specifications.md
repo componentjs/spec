@@ -150,28 +150,19 @@ The __public__ component __should__ have semantic versioned dependencies.
   The "remotes" property __MAY__ be supported to support additional component servers,
   where github is implied.
   When supported installation attempts __MUST__ be made in the order defined by the array.
+  
+  If you don't provide any remotes, no property or an empty array, component use these defaults:
 
 ```json
 {
   "remotes": [
-    "http://localhost:3000",
-    "http://user:pass@private"
+    "github",
+    "bitbucket"
   ]
 }
 ```
+  If most of your components originate from Bitbucket, you should provide a remotes array with `'bitbucket'` as the _first_ element. This will increase the performance. For more information checkout the [remote.js](https://github.com/componentjs/remotes.js) repository.
 
-  The remote "https://raw.github.com" is implied and automatically added to the _end_ of the `remotes` array at all times.
-  To increase performance if most of your components originate from GitHub it is recommended to add it as the _first_ remote so that it is hit before the others:
-
-```json
-{
-  "remotes": [
-    "https://raw.github.com",
-    "http://localhost:3000",
-    "http://user:pass@private"
-  ]
-}
-```
 
 ## .paths
 
