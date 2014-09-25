@@ -200,6 +200,9 @@ The __public__ component __should__ have semantic versioned dependencies.
       "component/assert": "*",
       "visionmedia/mocha": "*"
     },
+    "locals": [
+      "my-debug"
+    ],
     "scripts": [
       "test.js"
     ],
