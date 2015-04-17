@@ -222,6 +222,10 @@ The __public__ component __should__ have semantic versioned dependencies.
 
   Properties __may__ use globs and globstars to list files __only when the order of files is insignificant__.
 
+## File paths
+
+  Properties for file pahts in the component.json like the `scripts` property __MUST__ be written without any leading `./` for relative paths. Otherwise component will fail during build.
+
 ## Custom properties
 
   Custom properties may of course be used to facilitate custom build steps and is, in fact, encouraged.
