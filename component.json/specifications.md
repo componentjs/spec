@@ -82,12 +82,12 @@
 ## .images
 
   The `images` field __MUST__ be supported and fetched upon installation,
-  this allows component build tools to rewrite stylesheet `url()`s in order to accomodate various file serving techniques.
+  this allows component build tools to rewrite stylesheet `url()`s in order to accommodate various file serving techniques.
 
 ## .fonts
 
   The `fonts` field __MUST__ be supported and fetched upon installation,
-  this allows component build tools to rewrite stylesheet `url()`s in order to accomodate various file serving techniques.
+  this allows component build tools to rewrite stylesheet `url()`s in order to accommodate various file serving techniques.
 
 ## .files
 
